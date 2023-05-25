@@ -22,8 +22,6 @@
     "start": "cross-env react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build -p",
     "prettier": "npx prettier --write public && npx prettier --write src",
-    //    "predeploy": "npm run prettier && npm run build",
-    //    "deploy": "npm run predeploy && npm run vk-miniapps-deploy",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b build",
     "vk-miniapps-deploy": "vk-miniapps-deploy"
